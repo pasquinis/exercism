@@ -1,0 +1,17 @@
+(let strand1 "abc")
+(def strand1 "abc")
+strand1 
+(def strand2 "abb")
+strand2 
+(zipmap strand1 strand2)
+quit
+(def strand1 "abc")
+(def strand1 "ACCAGG")
+(def strand1 "ACCAGGG")
+(def strand2 "ACTATGG")
+(zipmap strand1 strand2)
+(def a (zipmap strand1 strand2))
+a
+(filter (fn [x y] (not= x y)) a)
+(filter (fn [x y] (not= x y) a))
+a
